@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Services;
-
 
 use App\Events\AccountCreated;
 use App\Models\Account;
@@ -25,7 +23,7 @@ class AccountService
         /*
          * The uuid will be used the retrieve the created account.
          */
-       return self::uuid($attributes['uuid']);
+        return self::uuid($attributes['uuid']);
     }
 
     public static function uuid(string $uuid): ?Account
@@ -37,5 +35,4 @@ class AccountService
     {
         return $account->balance < 0;
     }
-
 }

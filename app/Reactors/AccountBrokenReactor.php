@@ -21,7 +21,7 @@ class AccountBrokenReactor extends Reactor implements ShouldQueue
             Notification::route('mail', [Auth::user()->email => Auth::user()->name])
                 ->notify(new AccountBroken());
 
-           event(new BrokenMailSent($account->uuid));
+            event(new BrokenMailSent($account->uuid));
         }
     }
 }

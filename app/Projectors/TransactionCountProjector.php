@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Projectors;
-
 
 use App\Events\MoneyAdded;
 use App\Events\MoneySubtracted;

@@ -11,7 +11,9 @@ use Spatie\EventSourcing\StoredEvents\ShouldBeStored;
 
 class AccountCreated extends ShouldBeStored
 {
-    use Dispatchable, InteractsWithSockets, SerializesModels;
+    use Dispatchable;
+    use InteractsWithSockets;
+    use SerializesModels;
 
     public ?array $accountAttributes;
 

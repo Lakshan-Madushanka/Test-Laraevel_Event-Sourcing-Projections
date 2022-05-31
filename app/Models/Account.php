@@ -13,7 +13,7 @@ class Account extends Model
     protected $fillable = [
       'uuid',
       'name',
-      'balance'
+      'balance',
     ];
 
     //relationships

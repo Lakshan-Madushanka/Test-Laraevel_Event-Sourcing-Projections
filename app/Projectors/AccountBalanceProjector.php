@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Projectors;
-
 
 use App\Events\AccountCreated;
 use App\Events\BrokenMailSent;
@@ -42,7 +40,6 @@ class AccountBalanceProjector extends Projector
         $account->balance -= $event->amount;
 
         $account->save();
-
     }
 
     public function onBrokenMailSent(BrokenMailSent $event)

@@ -2,7 +2,6 @@
 
 namespace App\View\Components;
 
-use App\Models\StoredEvent;
 use Illuminate\Support\Collection;
 use Illuminate\View\Component;
 
@@ -22,7 +21,6 @@ class Account extends Component
         $this->account = $account;
         $this->transactionCount = $transactionCount;
         $this->history = $history;
-
     }
 
     /**

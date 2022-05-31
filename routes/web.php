@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
-    'verified'
+    'verified',
 ])->group(function () {
     Route::controller(UserAccountController::class)->group(function () {
         Route::get('/', 'index');
@@ -26,6 +26,5 @@ Route::middleware([
         Route::post('/store', 'store')->name('users.accounts.store');
         Route::post('/add-money', 'addMoney')->name('users.accounts.addMoney');
         Route::post('/subtract-money', 'subtractMoney')->name('users.accounts.subtractMoney');
-
     });
 });

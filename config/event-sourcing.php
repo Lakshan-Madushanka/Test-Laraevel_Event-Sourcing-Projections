@@ -89,7 +89,7 @@ return [
      */
     'event_class_map' => [
         'Money Deposited' => \App\Events\MoneyAdded::class,
-        'Money Withdrew' => \App\Events\MoneySubtracted::class
+        'Money Withdrew' => \App\Events\MoneySubtracted::class,
     ],
 
     /*

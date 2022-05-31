@@ -15,7 +15,7 @@ class ProjectionsProvider extends ServiceProvider
      */
     public function register()
     {
-       // Projectionist::addProjector(TransactionCountProjector::class);
+        // Projectionist::addProjector(TransactionCountProjector::class);
     }
 
     /**
